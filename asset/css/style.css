@@ -77,6 +77,8 @@ html{
     display: flex;
     color: #666666;
     font-size: 24px;
+    align-items: center;
+    
 }
 .header_service_item{
     color: #666666;
@@ -256,9 +258,7 @@ width: 100%;
 .spotlight{
     
 }
-.spotlight h3{
-    text-align: center;
-}
+ 
 .spotlight_product_list{
     display: flex;
     flex-wrap: wrap;
@@ -267,14 +267,102 @@ width: 100%;
 }
 .spotlight_product_item{
     list-style: none;
-    
+    position: relative;
+    width: 252px;
+    cursor: pointer;
+    height: 336px;
+    margin:   31px 8px;
 }
-.spotlight_product_item a{
+ 
+ 
+
+.spotlight_product_item_link{
     list-style: none;
-    width: 322px;
+    /* width: 322px; */
     display: block;
+   
+    height: 333px;
 }
+
+.spotlight_product_item_link_img{
+     width: 100%;
+}
+.themsanphamvaogiohang{
+    position: absolute;
+    display: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.themsanphamvaogiohang_link{
+    
+    background-color: #ffff;
+    color: #000;
+    padding: 13px 11px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 62px;
+    left: 22%;
+     
+}
+.themsanphamvaogiohang_link:hover{
+    text-decoration: none;
+    color: #000;
+
+}
+.spotlight_product_item:hover .themsanphamvaogiohang{
+    display: flex;
+    transition: all linear 0.4s;
+}
+
+.product_item_price{
+    font-size: 17px;
+    font-weight: 700;
+}
+
 
 @media only screen and (max-width: 600px) {
      
   }
+
+  /* # Phone */
+@media only screen and (max-width:320px){
+    .headerphone{
+        display: block;
+    }
+    .headerMaxScreen{
+        display: none;
+    }
+}
+
+/* # Tablet */
+@media  only screen and (min-width:321px) and (max-width:768px){
+    .headerphone{
+        display: block;
+    }
+    .headerMaxScreen{
+        display: none;
+    }
+}
+
+/* # Desktop */
+@media  only screen and (min-width:769px){
+    .headerphone{
+        display: none;
+    }
+    .headerMaxScreen{
+        display: block;
+    }
+}
+.colorback{
+    color:#000;
+}
+.navbar-inverse_fixed_colorheader {
+    background-color: #fff;
+    border-color: #ccc;
+}
