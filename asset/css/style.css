@@ -12,9 +12,7 @@ a{
 a:hover{
     text-decoration: none;
 }
-img{
-    width: 100%;
-}
+ 
 html{
     font-size: 62.5%;
     font-family:   sans-serif;
@@ -486,4 +484,7 @@ width: 100%;
     border-color: #ccc;
 }
 
- 
+ .tabs_product_item_img{
+    width: 307px;
+    height: 282px;
+ }
